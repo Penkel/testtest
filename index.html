@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .fullGameScreen {
+            display: grid;
+            position: relative;
+        }
+
+        #gameScreen {
+            border: 1px solid black;
+            background: url(/background.jpg);
+            background-position: center;
+        }
+
+        #dialogueMenu {
+            border: 1px solid rgb(255, 0, 0);
+            background: rgb(0, 0, 0);
+            text-align:center;
+        }
+
+        img {
+            display: none;
+        }
+
+        button {
+            position: absolute;
+            z-index: 999;
+            left: 50%;
+        }
+    </style>
+</head>
+<body>
+    <audio src="/sounds/hit.wav" id="hit_sound"></audio>
+
+
+<!-- <img src="/assets/images/brick.png" alt="brik" id="img_brick">
+<img src="/assets/images/ball.png" alt="ball" id="img_ball"> -->
+<img id="dlg_trigger" src="assets/triggers/dlg_trigger.jpg" alt="">
+<img id="player_model_down" src="/assets/player_model/down.png" alt="">
+<img id="player_model_up" src="/assets/player_model/up.png" alt="">
+<img id="player_model_left" src="/assets/player_model/left.png" alt="">
+<img id="player_model_right" src="/assets/player_model/right.png" alt="">
+
+
+<div class="fullGameScreen">
+    <canvas id="gameScreen" width="800px" height="600px"></canvas>
+    <button>sakdfjhaskjh</button>
+<canvas id="dialogueMenu" width="800px" height="200px">
+</canvas>
+</div>
+    <script src="index.js" type="module"></script>
+</body>
+</html>
